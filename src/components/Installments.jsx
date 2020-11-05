@@ -10,7 +10,7 @@ export default function Installments({ capital, fees, months }) {
       {data.map(
         ({ currentMonth, currentCapital, currentFee, currentIncome }) => {
           return (
-            <div style={style} className="col s2" key={currentMonth}>
+            <div className="col s2" key={currentMonth}>
               <Installment
                 currentMonth={currentMonth}
                 currentCapital={currentCapital}
@@ -24,11 +24,3 @@ export default function Installments({ capital, fees, months }) {
     </div>
   );
 }
-const style = {
-  marginTop: "10px",
-  border: "1px solid",
-  borderRadius: "4px",
-  justifyContent: "space-between",
-  margin: "4px",
-  alignItems: "center",
-};
